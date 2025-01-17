@@ -1,8 +1,10 @@
 package org.ies.vehicules;
 
+import java.util.Objects;
+
 public  abstract class Vehicule {
-    private int kmRealizados;
-    private String matricula;
+    protected int kmRealizados;
+    protected String matricula;
 
     public Vehicule(String matricula) {
         this.kmRealizados = 0;
@@ -21,6 +23,35 @@ public  abstract class Vehicule {
     public void showInfo() {
         System.out.println("Matrícula: " + matricula);
         System.out.println("Kilómetros realizados: " + kmRealizados);
+    }
+
+    public int getKmRealizados() {
+        return kmRealizados;
+    }
+
+    public void setKmRealizados(int kmRealizados) {
+        this.kmRealizados = kmRealizados;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Vehicule vehicule = (Vehicule) o;
+        return kmRealizados == vehicule.kmRealizados && Objects.equals(matricula, vehicule.matricula);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(kmRealizados, matricula);
     }
 }
 
