@@ -12,7 +12,7 @@ public class Main {
         coche.move(50);
         moto.move(30);
 
-        System.out.println("\nInformación de los vehículos:");
+        System.out.println("Información de los vehículos:");
         camion.showInfo();
         System.out.println();
         coche.showInfo();
