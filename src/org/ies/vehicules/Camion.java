@@ -5,8 +5,8 @@ import java.util.Objects;
 public class Camion extends Vehicule{
     private int numEjes;
 
-    public Camion(String matricula, int numEjes) {
-        super(matricula);
+    public Camion(int kmRealizados, String matricula, int numEjes) {
+        super(kmRealizados, matricula);
         this.numEjes = numEjes;
     }
 

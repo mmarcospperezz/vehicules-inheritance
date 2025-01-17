@@ -6,8 +6,8 @@ public class Coche extends Vehicule {
     private int numPuertas;
     private int caballos;
 
-    public Coche(String matricula, int numPuertas, int caballos) {
-        super(matricula);
+    public Coche(int kmRealizados, String matricula, int numPuertas, int caballos) {
+        super(kmRealizados, matricula);
         this.numPuertas = numPuertas;
         this.caballos = caballos;
     }

@@ -5,8 +5,8 @@ import java.util.Objects;
 public class Moto extends Vehicule {
     private int cilindrada;
 
-    public Moto(String matricula, int cilindrada) {
-        super(matricula);
+    public Moto(int kmRealizados, String matricula, int cilindrada) {
+        super(kmRealizados, matricula);
         this.cilindrada = cilindrada;
     }
 

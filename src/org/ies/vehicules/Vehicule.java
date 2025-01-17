@@ -6,8 +6,8 @@ public  abstract class Vehicule {
     protected int kmRealizados;
     protected String matricula;
 
-    public Vehicule(String matricula) {
-        this.kmRealizados = 0;
+    public Vehicule(int kmRealizados, String matricula) {
+        this.kmRealizados = kmRealizados;
         this.matricula = matricula;
     }
 
