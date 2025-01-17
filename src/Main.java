@@ -1,15 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import org.ies.vehicules.Camion;
+import org.ies.vehicules.Coche;
+import org.ies.vehicules.Moto;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Camion camion = new Camion("ABC123", 4);
+        Coche coche = new Coche("DEF456", 4, 120);
+        Moto moto = new Moto("GHI789", 250);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        camion.move(100);
+        coche.move(50);
+        moto.move(30);
+
+        System.out.println("\nInformación de los vehículos:");
+        camion.showInfo();
+        System.out.println();
+        coche.showInfo();
+        System.out.println();
+        moto.showInfo();
     }
 }
