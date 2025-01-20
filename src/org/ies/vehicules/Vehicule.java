@@ -23,7 +23,11 @@ public  abstract class Vehicule {
     public void showInfo() {
         System.out.println("Matrícula: " + matricula);
         System.out.println("Kilómetros realizados: " + kmRealizados);
+        showEspecificInfo();
+
     }
+
+    public abstract void showEspecificInfo();
 
     public int getKmRealizados() {
         return kmRealizados;

@@ -11,8 +11,7 @@ public class Camion extends Vehicule{
     }
 
     @Override
-    public void showInfo() {
-        super.showInfo();
+    public void showEspecificInfo() {
         System.out.println("Número de ejes: " + numEjes);
     }
 
