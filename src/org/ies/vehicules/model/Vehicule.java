@@ -1,4 +1,4 @@
-package org.ies.vehicules;
+package org.ies.vehicules.model;
 
 import java.util.Objects;
 

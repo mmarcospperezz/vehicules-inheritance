@@ -1,6 +1,6 @@
-import org.ies.vehicules.Camion;
-import org.ies.vehicules.Coche;
-import org.ies.vehicules.Moto;
+import org.ies.vehicules.model.Camion;
+import org.ies.vehicules.model.Coche;
+import org.ies.vehicules.model.Moto;
 
 public class Main {
     public static void main(String[] args) {
